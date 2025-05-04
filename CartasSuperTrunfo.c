@@ -2,12 +2,11 @@
 
 int main(){
 
-char cidade01[20], cidade02[20], estado01[2], estado02[2];
+char cidade01[20], cidade02[20], estado01[3], estado02[3];
 int populacao01, populacao02, pontos01, pontos02;
 float area01, area02, pib01, pib02;
 //variaveis separadas para melhor visualização do trabalho
 float densidade01, densidade02, per_capita01, per_capita02;           //Atualização jogo super trunfo
-//float propriedades01, propriedades02, propriedades03, propriedades04; //Atualização jogo super trunfo
 
 
  // Primeira carta
@@ -16,10 +15,10 @@ float densidade01, densidade02, per_capita01, per_capita02;           //Atualiza
     printf("Insira os dados da primeira carta!\n");
 
     printf("Digite o estado (A ou B): ");
-    scanf(" %s", &estado01);
+    scanf(" %s", estado01);
     
     printf("Digite a cidade: ");
-    scanf(" %s", &cidade01);
+    scanf(" %s", cidade01);
 
     printf("Digite a população da cidade: ");
     scanf("%d", &populacao01);
@@ -33,8 +32,8 @@ float densidade01, densidade02, per_capita01, per_capita02;           //Atualiza
     printf("Quantos pontos turisticos a cidade possui: ");
     scanf("%d", &pontos01);
 
-    densidade01 = populacao01 / area01; //Atualização jogo super trunfo
-    per_capita01 = pib01 / populacao01; //Atualização jogo super trunfo
+    densidade01 = populacao01 / area01; //Atualização jogo super trunfo / aventureiro
+    per_capita01 = pib01 * 1000000000.0 / (float)populacao01; //Atualização jogo super trunfo / aventureiro
 
     printf("\n"); // Foi utilizado para saltar linha, tornando o programa mais limpo.
 
@@ -44,10 +43,10 @@ float densidade01, densidade02, per_capita01, per_capita02;           //Atualiza
     printf("Insira os dados da segunda carta!\n");
 
     printf("Digite o estado (A ou B): ");
-    scanf(" %s", &estado02);
+    scanf(" %s", estado02);
 
     printf("Digite a cidade: ");
-    scanf(" %s", &cidade02);
+    scanf(" %s", cidade02);
 
     printf("Digite a população da cidade: ");
     scanf("%d", &populacao02);
@@ -62,7 +61,7 @@ float densidade01, densidade02, per_capita01, per_capita02;           //Atualiza
     scanf("%d", &pontos02);
 
     densidade02 = populacao02 / area02; //Atualização jogo super trunfo
-    per_capita02 = pib02 / populacao02;
+    per_capita02 = pib02 * 1000000000.0/ (float)populacao02;
 
     printf("\n"); // Foi utilizado para saltar linha, tornando o programa mais limpo.
 
@@ -76,8 +75,8 @@ float densidade01, densidade02, per_capita01, per_capita02;           //Atualiza
     printf("Área: %.2f Km²\n", area01);
     printf("PIB: %.2f Bilhões de reais\n", pib01);
     printf("Número de Pontos Turísticos: %d\n", pontos01);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidade01); //Atualização jogo super trunfo
-    printf("Pib Per capita: %.2f reais\n", per_capita01); //Atualização jogo super trunfo
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade01); //Atualização jogo super trunfo / aventureiro
+    printf("Pib Per capita: %.2f reais\n", per_capita01); //Atualização jogo super trunfo / aventureiro 
 
     printf("\n"); // Foi utilizado para saltar linha, tornando o programa mais limpo.
 
@@ -89,8 +88,8 @@ float densidade01, densidade02, per_capita01, per_capita02;           //Atualiza
     printf("Área: %.2f Km²\n", area02);
     printf("PIB: %.2f Bilhões de reais\n", pib02);
     printf("Número de Pontos Turísticos: %d\n", pontos02);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidade02); //Atualização jogo super trunfo
-    printf("Pib Per capita: %.2f reais\n", per_capita02); //Atualização jogo super trunfo
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade02); //Atualização jogo super trunfo / aventureiro
+    printf("Pib Per capita: %.2f reais\n", per_capita02); //Atualização jogo super trunfo / aventureiro
 
 
 return 0;
