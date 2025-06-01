@@ -229,7 +229,6 @@ float densidade01, densidade02, per_capita01, per_capita02;
                 case 1:
                     printf("Você escolheu População.\n");
                     resultado01 = populacao01 > populacao02 ? 1 : 0;
-                    
                     break;
         
                 case 2:
@@ -264,23 +263,21 @@ float densidade01, densidade02, per_capita01, per_capita02;
 
            
             case 2:        
-                    printf("*.*.*.*.*| Regras do jogo |*.*.*.*.*");
+                    printf("*.*.*.*.*| Regras do jogo |*.*.*.*.*\n");
                     printf("\n"); //salto de linha
                     printf("° Aqui será feito as comparações de atributos escolhidos pelo usuário. \n");
                     printf("° O jogador deverá escolher um unico atributo.\n");
                     printf("\n"); //Salto de linha
                     break;
 
-            default:
+                default:
                     printf("Opção inválida!\n");
                     break;
             }
             printf("\n");  // Salto de linha
             // aqui será feito a segunda escolha de atributo pelo usuário.
-            printf("Escolha o segundo atributo a ser comparado.");
-
-            printf("\n"); // salto de linha
-
+            printf("Escolha o segundo atributo a ser comparado.\n\n");
+          
            switch (segundoAtributo)
             
            printf("\n");  //Salto de linha
@@ -292,9 +289,8 @@ float densidade01, densidade02, per_capita01, per_capita02;
             printf("5. Densidade Populacional\n");
             printf("6. Pib Per Capita");
 
-             printf("\n");   //Salto de linha
-            
-             printf("Digite a opção: ");
+           
+            printf("\nDigite a opção: ");
             scanf("%d", &segundoAtributo);
             
             printf("\n");
@@ -307,7 +303,7 @@ float densidade01, densidade02, per_capita01, per_capita02;
                      
                 {
                 case 1:
-                    printf("Você escolheu População.\n");
+                    printf ("Você escolheu População.\n");
                     resultado02 = populacao01 > populacao02 ? 1 : 0;
                     
                     break;
@@ -348,7 +344,7 @@ float densidade01, densidade02, per_capita01, per_capita02;
                     {
                         printf("Parabéns, Você venceu!\n");
 
-                    } else if {(resultado01 != resultado02
+                    } else if (resultado01 != resultado02){
                         printf("Você empatou!\n");
 
                     } else {
